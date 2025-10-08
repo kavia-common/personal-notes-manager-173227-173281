@@ -1,0 +1,49 @@
+/* Tailwind base imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS variables for Ocean Professional theme */
+:root {
+  --color-primary: #2563EB;
+  --color-secondary: #F59E0B;
+  --color-success: #F59E0B;
+  --color-error: #EF4444;
+  --color-background: #f9fafb;
+  --color-surface: #ffffff;
+  --color-text: #111827;
+}
+
+/* Global utility classes */
+.ocean-card {
+  @apply bg-white rounded-xl shadow-soft;
+}
+
+.ocean-button {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-md font-medium transition-colors duration-200 ease-soft-out;
+  @apply bg-primary text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300;
+}
+
+.ocean-button-ghost {
+  @apply inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium transition-colors duration-200;
+  @apply text-text hover:bg-blue-50;
+}
+
+.ocean-input {
+  @apply w-full px-3 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-300 bg-white;
+}
+
+.ocean-chip {
+  @apply inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs bg-blue-50 text-blue-600 border border-blue-100;
+}
+
+.tag-chip {
+  @apply inline-flex items-center px-2 py-1 rounded-full text-xs bg-gray-100 text-gray-700;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
